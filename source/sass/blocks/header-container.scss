@@ -1,0 +1,26 @@
+.header-container {
+  min-height: 658px;
+  background: url("../img/hero-background-desktop@1x.png") no-repeat center / cover;
+
+  @include retina {
+    background: url("../img/hero-background-desktop@2x.png") no-repeat center / cover;
+  }
+
+  @include vp-1199 {
+    min-height: 554px;
+    background: url("../img/hero-background-tablet@1x.png") no-repeat center / cover;
+
+    @include retina {
+      background: url("../img/hero-background-tablet@2x.png") no-repeat center / cover;
+    }
+  }
+
+  @include vp-767 {
+    min-height: 491px;
+    background: url("../img/hero-background-mobile@1x.png") no-repeat center / cover;
+
+    @include retina {
+      background: url("../img/hero-background-mobile@2x.png") no-repeat center / cover;
+    }
+  }
+}

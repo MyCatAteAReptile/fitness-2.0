@@ -18,56 +18,34 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="header-container">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrapper">
+              <a class="header__logo" href="index.html">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="../img/svg/logo-mobile.svg" width="67" height="13">
+                  <source media="(max-width: 1199px)" srcset="../img/svg/logo-tablet.svg" width="81" height="16">
+                  <img class="header__logo" src="../img/svg/logo-desktop.svg" width="120" height="23" alt="Логотип компании.">
+                </picture>
+              </a>
+              <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="container"></div>
+        </section>
+      </div>
       <main>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-            <p><button class="btn">мяк 1</button></p>
-            <p><button class="btn focus-visible">мяк 2</button></p>
-            <p><a class="btn btn--light-bg">kusyak 1</a></p>
-            <p><button class="btn btn--light-bg focus-visible">kusyak 2</button></p>
           </div>
         </section>
       </main>
       <footer>
         <div class="container"></div>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>

@@ -18,9 +18,25 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="header-container">
+        <header class="header">
+          <div class="container">
+            <div class="header__wrapper">
+              <a class="header__logo" href="index.html">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="../img/svg/logo-mobile.svg" width="67" height="13">
+                  <source media="(max-width: 1199px)" srcset="../img/svg/logo-tablet.svg" width="81" height="16">
+                  <img class="header__logo" src="../img/svg/logo-desktop.svg" width="120" height="23" alt="Логотип компании.">
+                </picture>
+              </a>
+              <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="container"></div>
+        </section>
+      </div>
       <main>
         <section class="intro">
           <div class="container">
