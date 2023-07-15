@@ -1,6 +1,8 @@
 .btn {
-  display: inline-flex;
-  padding: 22px 56px;
+  display: block;
+  padding: 26px 0 23px 0;
+  //min-width: 183px;
+  //min-height: 57px;
 
   color: #FFFFFF;
   font-family: $ff-roboto;
