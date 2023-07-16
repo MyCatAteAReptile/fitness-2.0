@@ -2,6 +2,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 
 // ---------------------------------
+const infoList = document.querySelector('.info-list');
+
+if (window.matchMedia('(max-width: 767px)').matches && infoList !== null) {
+  let rows = Math.ceil((infoList.children.length + 1) / 2);
+  infoList.setAttribute('style', `grid-template-rows: repeat(${rows}, 1fr);`);
+}
 
 window.addEventListener('DOMContentLoaded', () => {
 

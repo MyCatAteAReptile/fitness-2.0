@@ -3,6 +3,26 @@
   display: flex;
   flex-direction: row;
 
+  @include vp-767 {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    justify-content: start;
+    row-gap: 20px;
+    grid-auto-flow: column dense;
+    //grid-auto-rows: 50px;
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 0px;
+    //flex-direction: column;
+    //-flex-wrap: wrap;
+    // width: 100%;
+    // padding: 0;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, auto-fit);
+  }
+
   &__item {
     padding: 0 20px;
 
@@ -12,6 +32,11 @@
 
     @include vp-767 {
       padding: 0;
+      //width: 50%;
+
+      // &:nth-child(2n) {
+      //   grid-column: 1/2;
+      // }
     }
   }
 

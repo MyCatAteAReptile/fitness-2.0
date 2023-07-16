@@ -1,8 +1,12 @@
 .socials-list {
   list-style: none;
-  background: red;
   padding: 0;
   margin: 0;
+  width: fit-content;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 11px;
 
   &__item {
     padding: 0;
@@ -11,18 +15,26 @@
 
   &__link {
     display: block;
+    line-height: 0;
     padding: 0;
     margin: 0;
+    color: #030A1A;
+    border-radius: 50%;
+    background-color: #FFFFFF;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 40px;
-      height: 40px;
-      mask: url("../img/sprite.svg#socials-vk-custom-frame") no-repeat center / contain;
-      background-color: #FFFFFF;
-      padding: 0;
-      margin: 0;
+    @include hover-focus {
+      color: #FFFFFF;
+      background-color: #103AAE;
+    }
+
+    &:active {
+      color: #FFFFFF;
+      background-color: #102654;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.3;
     }
   }
 }
