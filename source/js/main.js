@@ -3,10 +3,21 @@ import {Form} from './modules/form-validate/form';
 
 // ---------------------------------
 const infoList = document.querySelector('.info-list');
+const playGymVideoButton = document.querySelector('.gym__play-button');
+const gymVideoCover = document.querySelector('.gym__video-cover');
+const gymVideoFrame = document.querySelector('.gym__video-player iframe');
 
 if (window.matchMedia('(max-width: 767px)').matches && infoList !== null) {
   let rows = Math.ceil((infoList.children.length + 1) / 2);
   infoList.setAttribute('style', `grid-template-rows: repeat(${rows}, 1fr);`);
+}
+
+if (playGymVideoButton !== null && gymVideoCover !== null && gymVideoFrame !== null) {
+  playGymVideoButton.addEventListener('click', () => {
+    gymVideoCover.classList.add('visually-hidden');
+    playGymVideoButton.classList.add('visually-hidden');
+    gymVideoFrame.src += '?autoplay=1&mute=1';
+  });
 }
 
 window.addEventListener('DOMContentLoaded', () => {

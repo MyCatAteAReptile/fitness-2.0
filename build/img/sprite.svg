@@ -45,7 +45,9 @@
 <circle cx="50" cy="50" r="49" stroke="#102654" stroke-width="2"/>
 <circle cx="50" cy="50" r="29" fill="white"/>
 <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="#102654"/>
-</g></symbol><symbol id="video-player-button-disabled" viewBox="0 0 100 100"><g fill="none">
+</g></symbol><symbol id="video-player-button-custom-frame" viewBox="0 0 41 41">
+<path d="M28 21.5L15.25 28.8612L15.25 14.1388L28 21.5Z" fill="currentColor"/>
+</symbol><symbol id="video-player-button-disabled" viewBox="0 0 100 100"><g fill="none">
 <g opacity="0.4">
 <circle cx="50" cy="50" r="49" stroke="#102654" stroke-width="2"/>
 <circle cx="50" cy="50" r="36" fill="white"/>

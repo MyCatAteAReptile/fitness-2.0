@@ -20,6 +20,7 @@
     <div class="wrapper">
       <div class="header-container">
         <header class="header">
+          <h1 class="visually-hidden">Сайт фитнес центра Supergym</h1>
           <div class="container">
             <div class="header__wrapper">
               <a class="header__logo" href="index.html">
@@ -34,6 +35,7 @@
           </div>
         </header>
         <section class="hero">
+          <h2 class="visually-hidden">Реклама центра</h2>
           <div class="container">
             <div class="hero__container">
               <div class="hero__left-side-container">
@@ -51,8 +53,131 @@
         </section>
       </div>
       <main>
-        <section class="intro">
+        <section class="gym">
           <div class="container">
+            <div class="gym__description">
+              <h2 class="gym__title">Тренажерный зал</h2>
+              <p class="gym__subtitle">Просторный зал площадью 900&nbsp;кв/м</p>
+              <p class="gym__text">
+                Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;
+                идеальное место для укрепления тела и&nbsp;здоровья.
+                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+              </p>
+              <p class="gym__text gym__text--desktop-only">
+                В&nbsp;зале расположены отдельная зона для Crossfit
+                и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+                Также в&nbsp;фитнес центре есть несколько оборудованных залов
+                для различных видов групповых занятий.
+              </p>
+            </div>
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                srcset="../img/gym-mobile@1x.webp, ../img/gym-mobile@1x.webp 2x"
+                width="320"
+                height="313"
+              >
+              <source
+                type="image/webp"
+                media="(max-width: 1199px)"
+                srcset="../img/gym-tablet@1x.webp, ../img/gym-tablet@1x.webp 2x"
+                width="678"
+                height="345"
+              >
+              <source
+                type="image/webp"
+                srcset="../img/gym-desktop@1x.webp, ../img/gym-desktop@1x.webp 2x"
+                width="660"
+                height="401"
+              >
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/gym-mobile@1x.jpg, ../img/gym-mobile@1x.jpg 2x"
+                width="320"
+                height="313"
+              >
+              <source
+                media="(max-width: 1199px)"
+                srcset="../img/gym-tablet@1x.jpg, ../img/gym-tablet@1x.jpg 2x"
+                width="678"
+                height="345"
+              >
+              <img
+                class="gym__image"
+                src="../img/gym-desktop@1x.jpg"
+                srcset="../img/gym-desktop@2x.jpg 2x"
+                width="660"
+                height="401"
+                alt="Фото тренажерного зала с большим количеством тренажеров."
+              >
+            </picture>
+            <div class="gym__video-container">
+              <div class="gym__video-player">
+                <iframe
+                  src="https://www.youtube.com/embed/9TZXsZItgdw"
+                  title="Видео фитнес зал"
+                  frameborder="0"
+                  allow="accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="gym__video-cover">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                    srcset="../img/gym-video-mobile@1x.webp, ../img/gym-video-mobile@1x.webp 2x"
+                    width="320"
+                    height="167"
+                  >
+                  <source
+                    type="image/webp"
+                    media="(max-width: 1199px)"
+                    srcset="../img/gym-video-tablet@1x.webp, ../img/gym-video-tablet@1x.webp 2x"
+                    width="266"
+                    height="167"
+                  >
+                  <source
+                    type="image/webp"
+                    srcset="../img/gym-video-desktop@1x.webp, ../img/gym-video-desktop@1x.webp 2x"
+                    width="364"
+                    height="228"
+                  >
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="../img/gym-video-mobile@1x.jpg, ../img/gym-video-mobile@1x.jpg 2x"
+                    width="320"
+                    height="167"
+                  >
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="../img/gym-video-tablet@1x.jpg, ../img/gym-video-tablet@1x.jpg 2x"
+                    width="266"
+                    height="167"
+                  >
+                  <img
+                    class="gym__video-image"
+                    src="../img/gym-video-desktop@1x.jpg"
+                    srcset="../img/gym-video-desktop@2x.jpg 2x"
+                    width="364"
+                    height="228"
+                    alt="Видео фитнес зала."
+                  >
+                </picture>
+                <button class="gym__play-button">
+                  <svg width="100" height="100">
+                    <use xlink:href="img/sprite.svg#video-player-button-custom-frame"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
