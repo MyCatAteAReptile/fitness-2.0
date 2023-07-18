@@ -1610,17 +1610,179 @@ button,
   }
 }
 
-.gym__video-container {
+.gym__wrapper {
   position: relative;
+  padding: 120px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32% 60%;
+  grid-template-columns: 32% 60%;
+  -ms-grid-rows: minmax(401px, 1fr);
+  grid-template-rows: minmax(401px, 1fr);
+  -webkit-column-gap: 8%;
+     -moz-column-gap: 8%;
+          column-gap: 8%;
+  margin-left: 5%;
+}
+@media (max-width: 1199px) {
+  .gym__wrapper {
+    padding: 100px 0;
+    margin-left: 0;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: unset;
+    grid-template-rows: unset;
+    row-gap: 34.5px;
+    justify-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .gym__wrapper {
+    margin: 0 -15px;
+    padding: 63px 0 70px 0;
+    row-gap: 33.5px;
+  }
+}
+.gym__description {
+  padding-top: 40px;
+}
+@media (max-width: 1199px) {
+  .gym__description {
+    padding-top: 0;
+  }
+}
+.gym__title {
+  color: #102654;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+@media (max-width: 1199px) {
+  .gym__title {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .gym__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    text-align: start;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+}
+.gym__subtitle {
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 38px;
+}
+@media (max-width: 1199px) {
+  .gym__subtitle {
+    text-align: center;
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__subtitle {
+    text-align: start;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 24px;
+  }
+}
+.gym__text {
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 8px;
+}
+@media (max-width: 1199px) {
+  .gym__text {
+    text-align: center;
+    max-width: 512px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__text {
+    text-align: start;
+    margin-left: 15px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .gym__text--desktop-only {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .gym__text--desktop-only {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .gym__image {
+    margin-bottom: 6.5px;
+  }
+}
+.gym__video-container {
+  position: absolute;
+  bottom: 0.7%;
+  left: 34.5%;
   display: block;
   width: 364px;
-  height: 100%;
+  height: 228px;
+}
+@media (max-width: 1199px) {
+  .gym__video-container {
+    width: 266px;
+    height: 167px;
+    bottom: 2.2%;
+    left: 30.4%;
+  }
+}
+@media (max-width: 767px) {
+  .gym__video-container {
+    width: 320px;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
 }
 .gym__video-player {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  height: 0;
-  padding-bottom: 228px;
+  width: 364px;
+  height: 228px;
+}
+@media (max-width: 1199px) {
+  .gym__video-player {
+    width: 266px;
+    height: 167px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__video-player {
+    width: 320px;
+  }
 }
 .gym__video-player iframe, .gym__video-player object, .gym__video-player embed {
   position: absolute;
@@ -1649,34 +1811,86 @@ button,
   padding: 0;
   margin: 0;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(#ED0233), to(#003EB7));
-  background: linear-gradient(90deg, #ED0233 0%, #003EB7 100%);
   border-radius: 50%;
-  background: transparent;
+  background: url("../img/video-player-button-border-no-shadow.png") no-repeat center/contain;
+  color: #FFFFFF;
+}
+@media (max-width: 1199px) {
+  .gym__play-button {
+    width: 72px;
+    height: 72px;
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+  }
 }
 .gym__play-button svg {
   position: relative;
   width: 72px;
   height: 72px;
   display: block;
-  padding: 8px 8px 9px 9px;
+  padding: 15.5px;
   margin: auto;
-  color: #FFFFFF;
   border-radius: 50%;
   background: -webkit-gradient(linear, left top, right top, from(#ED0233), to(#003EB7));
   background: linear-gradient(90deg, #ED0233 0%, #003EB7 100%);
 }
-.gym__play-button::before {
-  position: absolute;
-  top: calc(50% - 48px);
-  left: calc(50% - 48px);
-  content: "";
-  display: block;
-  width: 96px;
-  height: 96px;
-  background: -webkit-gradient(linear, left top, right top, from(#ED0233), to(#003EB7));
-  background: linear-gradient(90deg, #ED0233 0%, #003EB7 100%);
-  border-radius: 50%;
+@media (max-width: 1199px) {
+  .gym__play-button svg {
+    width: 52px;
+    height: 52px;
+    padding: 10.5px;
+  }
+}
+@media (hover: hover) {
+  .gym__play-button:hover:not(.focus-visible) {
+    color: #102654;
+    background: none;
+    outline: 2px solid #102654;
+    outline-offset: -2px;
+  }
+  .gym__play-button:hover:not(.focus-visible) svg {
+    color: #102654;
+    background: #FFFFFF;
+  }
+}
+.gym__play-button.focus-visible:focus {
+  color: #102654;
+  background: none;
+  outline: 2px solid #102654;
+  outline-offset: -2px;
+}
+.gym__play-button.focus-visible:focus svg {
+  color: #102654;
+  background: #FFFFFF;
+}
+.gym__play-button:active {
+  color: #102654;
+  background: none;
+  outline: 2px solid #102654;
+}
+.gym__play-button:active svg {
+  color: #102654;
+  background: #FFFFFF;
+  width: 58px;
+  height: 58px;
+  padding: 11px;
+}
+@media (max-width: 1199px) {
+  .gym__play-button:active svg {
+    width: 42px;
+    height: 42px;
+    padding: 7.5px;
+  }
+}
+.gym__play-button:disabled {
+  pointer-events: none;
+  color: rgba(16, 38, 84, 0.4);
+  outline: 2px solid rgba(16, 38, 84, 0.4);
+  outline-offset: -2px;
+  background: none;
+}
+.gym__play-button:disabled svg {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /* @mixin hover-focus {
