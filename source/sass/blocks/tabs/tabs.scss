@@ -1,89 +1,74 @@
 .tabs {
-  max-width: 100%;
-}
 
-.tabs__controls {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
-}
-
-.tabs__control {
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0 20px;
-  opacity: 0.5;
-  min-width: auto;
-  justify-content: center;
-  width: 25%;
-
-  @media screen and (max-width: 1023px) {
-    margin: 0 10px;
-    padding: 15px;
+  &__controls {
+    display: flex;
+    gap: 46px;
+    width: fit-content;
+    margin: 0 auto;
   }
 
-  @media screen and (max-width: 767px) {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
-  }
+  &__control {
+    color: rgba(16, 38, 84, 0.50);
+    font-family: $ff-roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
 
-  &.is-active {
-    opacity: 1;
-    pointer-events: none;
-  }
-}
-
-.tabs__content {
-  margin-bottom: 40px;
-
-  transition: height 0.3s;
-}
-
-.tabs__element {
-  padding: 25px;
-  width: 100%;
-
-  @media screen and (max-width: 767px) {
-    padding: 15px;
-  }
-
-  p {
-    margin: 0;
-
-    &:not(:last-child) {
-      margin: 0 0 20px 0;
+    &.is-active {
+      color: #102654;
     }
   }
 
-  &:nth-child(1) {
-    background-color: rgb(250, 235, 215);
+  &__content {
   }
 
-  &:nth-child(2) {
-    background-color: rgb(229, 250, 215);
+  &__element {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 3%;
   }
 
-  &:nth-child(3) {
-    background-color: rgb(180, 188, 233);
+  &__card {
   }
 
-  &:nth-child(4) {
-    background-color: rgb(255, 187, 204);
+  &__card-title {
+    color: #102654;
+    text-align: center;
+    font-family: $ff-roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.156%;
   }
-}
 
-.tabs--unset .tabs__content {
-  height: 100px;
-}
+  &__card-text {
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 
-.tabs--unset .tabs__element {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  &__card-price {
+    color: #103AAE;
+    font-family: $ff-roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    & span {
+      color: #103AAE;
+      font-family: $ff-rouble;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+  }
+
+  &__buy-btn {
+  }
 }

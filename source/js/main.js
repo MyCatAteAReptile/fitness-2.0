@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {Form} from './modules/form-validate/form';
+//import {Form} from './modules/form-validate/form';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 const infoList = document.querySelector('.info-list');
 const playGymVideoButton = document.querySelector('.gym__play-button');
 const gymVideoCover = document.querySelector('.gym__video-cover');
 const gymVideoFrame = document.querySelector('.gym__video-player iframe');
+const subscriptionsControl = document.querySelector('.tabs__control');
 
 if (window.matchMedia('(max-width: 767px)').matches && infoList !== null) {
   let rows = Math.ceil((infoList.children.length + 1) / 2);
@@ -20,6 +22,10 @@ if (playGymVideoButton !== null && gymVideoCover !== null && gymVideoFrame !== n
   });
 }
 
+// if (subscriptionsTabs !== null) {
+//   subscriptionsTabs.append(tabs);
+// }
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -33,9 +39,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    const form = new Form();
-    window.form = form;
-    form.init();
+    // const form = new Form();
+    // window.form = form;
+    // form.init();
+    initTabs();
+    // subscriptionsControl.addEventListener('click', (e) => {
+    //   e.target.openTab();
+    // });
   });
 });
 
