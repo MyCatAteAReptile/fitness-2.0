@@ -141,7 +141,7 @@ export class Tabs {
     } else if (dataHeight === 'unset') {
       contentElement.style.height = null;
     } else {
-      contentElement.style.height = `${this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement).offsetHeight}px`;
+      contentElement.style.height = `${this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement).scrollHeight}px`;
     }
 
     setTimeout(() => parentElement.classList.remove('no-transition'));

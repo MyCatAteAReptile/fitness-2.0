@@ -1610,6 +1610,19 @@ button,
   }
 }
 
+.gym {
+  padding-bottom: 115px;
+}
+@media (max-width: 1199px) {
+  .gym {
+    padding-bottom: 83px;
+  }
+}
+@media (max-width: 767px) {
+  .gym {
+    padding-bottom: 0;
+  }
+}
 .gym__wrapper {
   position: relative;
   padding: 120px 0;
@@ -1623,6 +1636,11 @@ button,
      -moz-column-gap: 8%;
           column-gap: 8%;
   margin-left: 5%;
+}
+.gym__wrapper picture {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 1199px) {
   .gym__wrapper {
@@ -1745,7 +1763,7 @@ button,
 }
 .gym__video-container {
   position: absolute;
-  bottom: 0.7%;
+  top: 63.6%;
   left: 34.5%;
   display: block;
   width: 364px;
@@ -1755,14 +1773,14 @@ button,
   .gym__video-container {
     width: 266px;
     height: 167px;
-    bottom: 2.2%;
+    top: 76.2%;
     left: 30.4%;
   }
 }
 @media (max-width: 767px) {
   .gym__video-container {
     width: 320px;
-    bottom: 0;
+    top: 0;
     left: 0;
     position: relative;
   }
@@ -1917,8 +1935,8 @@ button,
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  -webkit-transition: none;
+  transition: none;
 }
 
 [data-tabs=element].for-load {
@@ -1943,36 +1961,171 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 36px auto;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+@media (max-width: 1199px) {
+  .tabs__controls {
+    gap: 56px;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__controls {
+    gap: 45px;
+    margin-bottom: 34px;
+  }
 }
 .tabs__control {
+  position: relative;
   color: rgba(16, 38, 84, 0.5);
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 11px 0;
+}
+@media (max-width: 1199px) {
+  .tabs__control {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__control {
+    font-size: 16px;
+    padding: 13px 0;
+  }
+}
+.tabs__control::before {
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 0;
+  border: 1px solid #D10A42;
 }
 .tabs__control.is-active {
   color: #102654;
 }
+.tabs__control.is-active::before {
+  content: "";
+}
+@media (hover: hover) {
+  .tabs__control:hover:not(.focus-visible) {
+    color: #102654;
+  }
+  .tabs__control:hover:not(.focus-visible)::before {
+    content: "";
+  }
+}
+.tabs__control.focus-visible:focus {
+  color: #102654;
+}
+.tabs__control.focus-visible:focus::before {
+  content: "";
+}
+@media (max-width: 1199px) {
+  .tabs__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .tabs__element {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 32% 32% 32%;
-  grid-template-columns: 32% 32% 32%;
-  -webkit-column-gap: 3%;
-     -moz-column-gap: 3%;
-          column-gap: 3%;
+  -ms-grid-columns: 31% 31% 31%;
+  grid-template-columns: 31% 31% 31%;
+  gap: 3.5%;
+}
+@media (max-width: 1199px) {
+  .tabs__element {
+    width: 65%;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    gap: 3%;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__element {
+    width: 100%;
+    gap: 2.9%;
+  }
+}
+.tabs__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 57px 70px 60px 70px;
+  background-color: #FFFFFF;
+  border: 7px solid #FFFFFF;
+}
+@media (hover: hover) {
+  .tabs__card:hover:not(.focus-visible) {
+    -o-border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+       border-image: -webkit-gradient(linear, left top, right bottom, from(#D10A42), to(#00359F));
+       border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+    border-image-slice: 1;
+  }
+}
+.tabs__card.focus-visible:focus {
+  -o-border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#D10A42), to(#00359F));
+     border-image: linear-gradient(to right bottom, #D10A42, #00359F);
+  border-image-slice: 1;
+}
+@media (max-width: 767px) {
+  .tabs__card {
+    padding: 43px 34px 50px 34px;
+  }
 }
 .tabs__card-title {
   color: #102654;
-  text-align: center;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110.156%;
+  line-height: 152.344%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .tabs__card-title {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.156%;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__card-title {
+    font-size: 22px;
+  }
 }
 .tabs__card-text {
   color: #102654;
@@ -1981,6 +2134,17 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 63px;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .tabs__card-text {
+    color: #495A7D;
+    margin-bottom: 54px;
+  }
 }
 .tabs__card-price {
   color: #103AAE;
@@ -1989,14 +2153,111 @@ button,
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  text-align: center;
+  margin: 0 -30px;
+  padding: 0;
+  margin-bottom: 37px;
+  z-index: 1;
 }
-.tabs__card-price span {
-  color: #103AAE;
-  font-family: "Rouble", "Arial", sans-serif;
-  font-size: 60px;
+@media (max-width: 1199px) {
+  .tabs__card-price {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__card-price {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  .tabs__card-price svg {
+    width: 24px;
+    height: 33px;
+  }
+}
+.tabs__card-price-shadow {
+  position: absolute;
+  top: 6.5%;
+  z-index: 0;
+  color: rgba(232, 232, 232, 0.47);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+@media (max-width: 767px) {
+  .tabs__card-price-shadow {
+    font-size: 80px;
+    top: 8%;
+  }
+}
+.tabs__buy-btn {
+  width: 100%;
+  min-height: 64px;
+  z-index: 1;
+}
+@media (max-width: 1199px) {
+  .tabs__buy-btn {
+    width: 72%;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__buy-btn {
+    width: 100%;
+  }
+}
+
+.subscriptions {
+  background-color: #F8F9FC;
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1199px) {
+  .subscriptions {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions {
+    padding: 63px 0;
+  }
+}
+.subscriptions::before {
+  position: absolute;
+  bottom: -78px;
+  right: 0;
+  z-index: 1;
+  content: "";
+  width: 285px;
+  height: 348px;
+  background: url("../img/weight-plates-cut-desktop@1x.png") no-repeat center/cover;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .subscriptions::before {
+    background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center/cover;
+  }
+}
+@media (max-width: 1199px) {
+  .subscriptions::before {
+    width: 347px;
+    height: 410px;
+    bottom: -110px;
+    background: url("../img/weight-plates-cut-tablet@1x.png") no-repeat center/cover;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .subscriptions::before {
+    background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center/cover;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions::before {
+    content: unset;
+  }
 }
 .subscriptions__title {
   text-align: center;
@@ -2007,6 +2268,21 @@ button,
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media (max-width: 1199px) {
+  .subscriptions__title {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+}
+@media (max-width: 767px) {
+  .subscriptions__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 /* @mixin hover-focus {
     @media (hover: hover) {

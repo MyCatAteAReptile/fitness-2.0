@@ -1,4 +1,14 @@
 .gym {
+  padding-bottom: 115px;
+
+  @include vp-1199 {
+    padding-bottom: 83px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 0;
+  }
+
   &__wrapper {
     position: relative;
     padding: 120px 0;
@@ -7,6 +17,10 @@
     grid-template-rows: minmax(401px, 1fr);
     column-gap: 8%;
     margin-left: 5%;
+
+    & picture {
+      align-self: center;
+    }
 
     @include vp-1199 {
       padding: 100px 0;
@@ -125,6 +139,7 @@
   }
 
   &__image {
+
     @include vp-767 {
       margin-bottom: 6.5px;
     }
@@ -132,7 +147,9 @@
 
   &__video-container {
     position: absolute;
-    bottom: 0.7%;
+    //bottom: 0.7%;
+    top: 63.6%;
+    //top: 409px;
     left: 34.5%;
     display: block;
     width: 364px;
@@ -141,13 +158,14 @@
     @include vp-1199 {
       width: 266px;
       height: 167px;
-      bottom: 2.2%;
+      //bottom: 2.2%;
+      top: 76.2%;
       left: 30.4%;
     }
 
     @include vp-767 {
       width: 320px;
-      bottom: 0;
+      top: 0;
       left: 0;
       position: relative;
     }

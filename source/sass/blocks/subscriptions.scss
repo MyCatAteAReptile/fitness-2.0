@@ -1,4 +1,47 @@
 .subscriptions {
+  background-color: #F8F9FC;
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 63px 0;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -78px;
+    right: 0;
+    z-index: 1;
+    content: "";
+    width: 285px;
+    height: 348px;
+    background: url("../img/weight-plates-cut-desktop@1x.png") no-repeat center / cover;
+
+    @include retina {
+      background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center / cover;
+    }
+
+    @include vp-1199 {
+      width: 347px;
+      height: 410px;
+      bottom: -110px;
+
+      background: url("../img/weight-plates-cut-tablet@1x.png") no-repeat center / cover;
+
+      @include retina {
+        background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center / cover;
+      }
+    }
+
+    @include vp-767 {
+      content: unset;
+    }
+  }
 
   &__title {
     text-align: center;
@@ -9,6 +52,19 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 
   &__tabs {
