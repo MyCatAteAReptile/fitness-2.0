@@ -1,0 +1,57 @@
+.coaches {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slider {
+    background-color: darkblue;
+    // margin-left: -60px;
+    // margin-right: -60px;
+    // padding-left: 60px;
+    // padding-right: 60px;
+  }
+
+  &__slider-wrapper {
+
+  }
+
+  &__slide {
+    width: 150px;
+    background-color: skyblue;
+    // для ховера mask: linear-gradient(rgba(16, 38, 84, 0.1), rgba(16, 38, 84, 0.1));
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 50%;
+    // width: calc(100% + 80px);
+    // margin: 0 -40px;
+    width: 100%;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    // width: calc(var(--swiper-navigation-size) / 44 * 27);
+    // height: var(--swiper-navigation-size);
+    margin-top: calc(0px - 56px / 2);
+    // z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn-prev {
+    left: calc(-40px - (56px / 2));
+  }
+
+  &__btn-next {
+    transform: rotate(180deg);
+    right: calc(-40px - (56px / 2));
+  }
+}
