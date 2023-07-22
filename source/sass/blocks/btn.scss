@@ -1,6 +1,7 @@
 .btn {
   display: block;
-  padding: 26px 0 23px 0;
+  //padding: 26px 0 23px 0;
+  padding: 28px 0 21px 0;
   //min-width: 183px;
   //min-height: 57px;
 
@@ -21,6 +22,14 @@
 
   transition: opacity $trans-default;
 
+  @include vp-1199 {
+    padding: 24px 0 25px 0;
+  }
+
+  @include vp-767 {
+
+  }
+
   @include hover {
     color: #103AAE;
     background-color: #FFFFFF;
@@ -40,6 +49,14 @@
     color: #102654;
     outline: 2px solid #102654;
     outline-offset: -2px;
+
+    @include vp-1199 {
+      padding: 27px 0 23px 0;
+    }
+
+    @include vp-767 {
+
+    }
 
     @include hover {
       color: #FFFFFF;
