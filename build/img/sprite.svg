@@ -16,7 +16,7 @@
 <circle cx="29" cy="29" r="28" stroke="#102654"/>
 <path d="M35 13L19 29L35 45" stroke="#102654"/>
 </g></symbol><symbol id="arrow-left" viewBox="0 0 56 56"><g fill="none">
-<path d="M36 12L20 28L36 44" stroke="#102654"/>
+<path d="M36 12L20 28L36 44" stroke="currentColor"/>
 </g></symbol><symbol id="faq-button-active" viewBox="0 0 42 42"><g fill="none">
 <circle cx="21" cy="21" r="20.5" fill="#102654" stroke="#102654"/>
 <path d="M30 21H21H12" stroke="white"/>

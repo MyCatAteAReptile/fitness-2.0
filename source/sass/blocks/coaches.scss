@@ -1,25 +1,163 @@
 .coaches {
+  &__title {
+    color: #102654;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 48px;
+    padding: 0;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+      margin-bottom: 43px;
+    }
+  }
 
   &__wrapper {
     position: relative;
+
+    @include vp-1199 {
+      margin-left: 55px;
+      margin-right: 55px;
+    }
+
+    @include vp-767 {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__slider {
-    background-color: darkblue;
     // margin-left: -60px;
     // margin-right: -60px;
     // padding-left: 60px;
     // padding-right: 60px;
+    @include vp-1199 {
+
+    }
+
+    @include vp-767 {
+
+    }
   }
 
   &__slider-wrapper {
 
+    @include vp-1199 {
+
+    }
+
+    @include vp-767 {
+
+    }
   }
 
   &__slide {
-    width: 150px;
-    background-color: skyblue;
-    // для ховера mask: linear-gradient(rgba(16, 38, 84, 0.1), rgba(16, 38, 84, 0.1));
+
+  }
+
+  &__slide-wrapper {
+    margin: auto;
+    position: relative;
+    width: fit-content;
+  }
+
+  &__image {
+    margin: auto;
+
+    @include vp-1199 {
+      width: 268px;
+      height: 294px;
+    }
+
+    @include vp-767 {
+      width: 226px;
+      height: 274px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //max-width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 22px 0;
+    //background-color: rgba(16, 38, 84, 0.89);
+    @include hover-focus {
+      background-color: rgba(16, 38, 84, 0.89);
+      justify-content: center;
+
+      .coaches__description {
+        display: flex;
+      }
+    }
+  }
+
+  &__name {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__description {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__specialization {
+    color: #B6BDCC;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    margin-top: -3px;
+    margin-bottom: 33px;
+  }
+
+  &__achievements {
+    margin: 0;
+    padding-left: 30px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__achievement {
+    color: #FFFFFF;
+    font-family: $ff-roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 
   &__navigation {
@@ -33,6 +171,7 @@
   &__btn {
     background: none;
     border: none;
+    border-radius: 50%;
     outline: none;
     position: absolute;
     top: 50%;
@@ -44,14 +183,58 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    @include vp-1199 {
+
+    }
+
+    @include vp-767 {
+      margin-top: calc(0px - 30px / 2);
+    }
+
+    & svg {
+      border-radius: 50%;
+
+      @include vp-767 {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+      }
+
+      @include hover-focus {
+        outline: 1px solid #102654;
+      }
+
+      &:active {
+        background-color: #102654;
+        color: #FFFFFF;
+      }
+    }
   }
 
   &__btn-prev {
-    left: calc(-40px - (56px / 2));
+    left: -80px;
+
+    @include vp-1199 {
+      left: -81px;
+    }
+
+    @include vp-767 {
+      left: -16px;
+    }
   }
 
   &__btn-next {
     transform: rotate(180deg);
-    right: calc(-40px - (56px / 2));
+    right: -80px;
+
+    @include vp-1199 {
+      right: -81px;
+    }
+
+    @include vp-767 {
+      right: -16px;
+    }
   }
 }
