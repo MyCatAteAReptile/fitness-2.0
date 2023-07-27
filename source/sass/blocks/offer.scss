@@ -1,0 +1,230 @@
+.offer {
+  color: #1C3374;
+  font-family: $ff-roboto;
+  font-style: normal;
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 90px 0;
+  }
+
+  @include vp-767 {
+    padding: 62px 0;
+  }
+
+  &__heading {
+    color: #102654;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 34px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      margin-top: 0;
+      margin-bottom: 42px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      letter-spacing: 0.96px;
+    }
+  }
+
+  &__container {
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 40px;
+    // flex-wrap: wrap;
+    // width: 100%;
+    display: grid;
+    width: 100%;
+    //grid-template-columns: minmax(560px, 48%) minmax(560px, 48%);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    @include vp-1199 {
+      column-gap: 30px;
+      row-gap: 30px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    padding: 25px 35px 28px 28px;
+    margin: 0 auto;
+    border-width: 7px;
+    border-style: solid;
+    border-image: linear-gradient(129deg, #D10A42 0%, #00359F 100%);
+    border-image-slice: 1;
+    height: fit-content;
+    min-width: 100%;
+    //width: 560px;
+    min-height: 211px;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1199 {
+
+    }
+
+    @include vp-767 {
+      padding: 35px 28px 28px 28px;
+    }
+  }
+
+  &__item--accent {
+    color: #FFFFFF;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    min-height: 462px;
+    align-items: center;
+    height: 100%;
+    //padding: 18px 28px 18px 28px;
+
+    @include vp-1199 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+
+    @include vp-767 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      flex-direction: column;
+    }
+
+    & .offer__title {
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+
+    & .offer__text {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    & picture {
+
+      @include vp-767 {
+        width: 100%;
+      }
+    }
+  }
+
+  &__wrapper {
+    background-color: #ED0233;
+    padding: 42px 45px 45px 45px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    @include vp-1199 {
+      width: 41.5%;
+      flex-grow: 2;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      align-items: center;
+      padding: 42px 50px 45px 50px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+
+  &__amount {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    @include vp-767 {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+
+    @include vp-767 {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__btn {
+    color: #1C3374;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    border-bottom: 1px solid #1C3374;
+
+    @include vp-767 {
+      align-self: center;
+    }
+  }
+
+  &__btn--accent {
+    color: #FFFFFF;
+    font-size: 14px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  &__image {
+    height: 100%;
+    flex-grow: 2;
+    max-width: unset;
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}

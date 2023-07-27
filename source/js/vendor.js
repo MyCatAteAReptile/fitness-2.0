@@ -36,7 +36,8 @@ const coachSlider = new Swiper('.coaches__slider', {
 });
 
 const testSlider = new Swiper('.test__slider__slider', {
-  loop: true,
+  loop: false,
+  watchOverflow: false,
   navigation: {
     nextEl: '.test__slider__btn-next',
     prevEl: '.test__slider__btn-prev',
