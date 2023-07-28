@@ -75,6 +75,12 @@
       background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
       outline: none;
     }
+
+    &.is-active {
+      color: #FFFFFF;
+      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      outline: none;
+    }
   }
 
   &:disabled {

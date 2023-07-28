@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 //import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
 const infoList = document.querySelector('.info-list');
@@ -43,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // window.form = form;
     // form.init();
     initTabs();
+    initAccordions();
     // subscriptionsControl.addEventListener('click', (e) => {
     //   e.target.openTab();
     // });

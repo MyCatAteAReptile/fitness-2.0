@@ -1,0 +1,203 @@
+.faq {
+  background-color: #F8F9FC;
+  padding: 165px 0;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+
+  &__heading {
+    color: #102654;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 40px;
+
+    @include vp-1199 {
+      text-align: center;
+      font-size: 42px;
+      letter-spacing: 1.26px;
+    }
+
+    @include vp-767 {
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 0.96px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 34px;
+
+    @include vp-1199 {
+      grid-template-columns: 1fr;
+    }
+
+    @include vp-767 {
+
+    }
+  }
+
+  &__tabs-controls {
+
+    @include vp-1199 {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+
+    @include vp-767 {
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__tabs-control {
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-family: $ff-roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 0;
+    min-height: 54px;
+
+    @include vp-767 {
+      margin-bottom: 0;
+      width: calc(50% - 4px);
+      min-height: 44px;
+      font-size: 16px;
+    }
+  }
+
+  &__tabs-content {
+  }
+
+  &__tabs-element {
+
+  }
+
+  &__accordion {
+    border-top: 1px solid rgba(28, 51, 116, 0.20);
+  }
+
+  &__accordion-element{
+    min-height: 92px;
+    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+
+    @include vp-1199 {
+      padding-bottom: 22px;
+    }
+
+    @include vp-767 {
+      padding-bottom: 20px;
+      min-height: 84px;
+    }
+
+    &.is-active {
+      padding-bottom: 27px;
+
+      @include vp-767 {
+        padding-bottom: 19px;
+      }
+    }
+  }
+
+  &__accordion-button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 26px;
+    padding-left: 5px;
+    text-align: start;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      padding-top: 20px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      width: 42px;
+      height: 42px;
+      background: url("../img/svg/svg-sprite.svg#faq-button") no-repeat center / contain;
+
+      @include vp-767 {
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @include hover-focus {
+      &::after {
+        background: url("../img/svg/svg-sprite.svg#faq-button-hover-focus") no-repeat center / contain;
+      }
+    }
+  }
+
+  .faq__accordion-element.is-active .faq__accordion-button::after {
+    background: url("../img/svg/svg-sprite.svg#faq-button-active") no-repeat center / contain;
+  }
+
+  &__accordion-content {
+  }
+
+  &__accordion-wrapper {
+
+    & p {
+      color: #102654;
+      font-family: $ff-roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%;
+      margin: 0;
+      margin-top: 6px;
+      margin-left: 6px;
+      max-width: 78%;
+
+      @include vp-1199 {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+
+      @include vp-767 {
+        font-size: 16px;
+        max-width: 100%;
+        margin-top: 13px;
+      }
+    }
+  }
+}
