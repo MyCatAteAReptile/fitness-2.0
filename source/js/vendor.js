@@ -35,13 +35,13 @@ const coachSlider = new Swiper('.coaches__slider', {
   },
 });
 
-const testSlider = new Swiper('.test__slider__slider', {
+const feedbackSlider = new Swiper('.feedback__slider', {
   loop: false,
   watchOverflow: false,
   navigation: {
-    nextEl: '.test__slider__btn-next',
-    prevEl: '.test__slider__btn-prev',
+    nextEl: '.feedback__btn-next',
+    prevEl: '.feedback__btn-prev',
   },
-  slidesPerView: 4,
-  spaceBetween: 40,
+  slidesPerView: 1,
+  spaceBetween: 80,
 });

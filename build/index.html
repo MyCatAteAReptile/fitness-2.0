@@ -716,7 +716,7 @@
                     >
                     <source
                       type="image/webp"
-                      srcset="../img/girl-in-blue-swimsuit-desktop@1x.webp, ../img/girl-in-blue-swimsuit-desktop@2x.jpg 2x"
+                      srcset="../img/girl-in-blue-swimsuit-desktop@1x.webp, ../img/girl-in-blue-swimsuit-desktop@2x.webp 2x"
                       width: "280px";
                       height: "462px";
                     >
@@ -915,28 +915,144 @@
             </div>
           </div>
         </section>
-        <section class="test__slider"style="margin-top: 30px; outline: 3px solid black; outline-offset: -3px">
+        <section class="feedback">
           <div class="container">
-            <div class="test__slider__slider swiper">
-              <div class="test__slider__slider-wrapper swiper-wrapper">
-                <div class="test__slider__slide swiper-slide">
-                  <img
-                  src="../img/man-striking-powder-desktop@1x.jpg"
-                  srcset="../img/man-striking-powder-desktop@2x.jpg 2x"
-                  width="160"
-                  height="100"
-                  alt="Видео фитнес зала."
-                >
+            <h2 class="feedback__heading">Отзывы</h2>
+            <div class="feedback__wrapper">
+              <div class="feedback__slider swiper">
+                <div class="feedback__slider-wrapper swiper-wrapper">
+                  <div class="feedback__slide swiper-slide">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="../img/user-anna-orlova@1x.webp, ../img/user-anna-orlova@2x.webp 2x"
+                        width: "80px";
+                        height: "80px";
+                      >
+                      <img
+                        class="feedback__image"
+                        src="../img/user-anna-orlova@1x.png"
+                        srcset="../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                        alt="Фото пользрователя."
+                      >
+                    </picture>
+                    <p class="feedback__name">Анна Орлова</p>
+                    <p class="feedback__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                  <div class="feedback__slide swiper-slide">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="../img/user-anna-orlova@1x.webp, ../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                      >
+                      <img
+                        class="feedback__image"
+                        src="../img/user-anna-orlova@1x.png"
+                        srcset="../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                        alt="Фото пользрователя."
+                      >
+                    </picture>
+                    <p class="feedback__name">Саша Петрова</p>
+                    <p class="feedback__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                  <div class="feedback__slide swiper-slide">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="../img/user-anna-orlova@1x.webp, ../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                      >
+                      <img
+                        class="feedback__image"
+                        src="../img/user-anna-orlova@1x.png"
+                        srcset="../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                        alt="Фото пользрователя."
+                      >
+                    </picture>
+                    <p class="feedback__name">Каша Перлова</p>
+                    <p class="feedback__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                  <div class="feedback__slide swiper-slide">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="../img/user-anna-orlova@1x.webp, ../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                      >
+                      <img
+                        class="feedback__image"
+                        src="../img/user-anna-orlova@1x.png"
+                        srcset="../img/user-anna-orlova@2x.png 2x"
+                        width: "80px";
+                        height: "80px";
+                        alt="Фото пользрователя."
+                      >
+                    </picture>
+                    <p class="feedback__name">Паша Светлова</p>
+                    <p class="feedback__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
                 </div>
-                <div class="test__slider__slide swiper-slide" style="background-color: red">Slide 2</div>
-                <div class="test__slider__slide swiper-slide" style="background-color: red">Slide 3</div>
-                <div class="test__slider__slide swiper-slide" style="background-color: red">Slide 4</div>
               </div>
-              <div class="test__slider__btn-prev swiper-button-prev"></div>
-              <div class="test__slider__btn-next swiper-button-next"></div>
+              <div class="feedback__navigation">
+                <button class="feedback__btn feedback__btn-prev">
+                  <svg width="56" height="56">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="feedback__btn feedback__btn-next">
+                  <svg width="56" height="56">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
+        <div class="registration-contacts-wrapper">
+          <section class="registration">
+            <div class="container" data-form-validate="data-form-validate">
+              <h2 class="registration__heading">Бесплатное занятие</h2>
+              <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required" data-limitation="letters">
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input type="text" name="name" placeholder="Имя" id="name" required>
+                  </div>
+                  <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <label class="visually-hidden" for="phone">Телефон</label>
+                    <input type="tel" name="phone" placeholder="Телефон" id="phone" required>
+                  </div>
+                </fieldset>
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <div class="container">
+              <h2 class="contacts__heading">Контакты</h2>
+              <div class="contacts__container">
+                <div class="contacts__wrapper contacts__wrapper--rightlined">
+                  <p class="contacts__item"><span>Адрес:</span>г. Омск, ул. 60 лет Октября, 7</p>
+                  <p class="contacts__item"><span>График работы:</span>Пн-Вс: с 8:00 до 22:00</p>
+                </div>
+                <div class="contacts__wrapper">
+                  <p class="contacts__item"><span>Телефон:</span><a href="tel:+78005555555">8-800-555-55-55</a></p>
+                  <p class="contacts__item"><span>Email:</span><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="container">

@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-//import {Form} from './modules/form-validate/form';
+import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
 
@@ -8,7 +8,9 @@ const infoList = document.querySelector('.info-list');
 const playGymVideoButton = document.querySelector('.gym__play-button');
 const gymVideoCover = document.querySelector('.gym__video-cover');
 const gymVideoFrame = document.querySelector('.gym__video-player iframe');
-const subscriptionsControl = document.querySelector('.tabs__control');
+const registrationForm = document.querySelector('.registration__form');
+const formSubmit = document.querySelector('.registration__form').querySelector('button');
+const formInput = document.querySelector('.registration__form').querySelector('input');
 
 if (window.matchMedia('(max-width: 767px)').matches && infoList !== null) {
   let rows = Math.ceil((infoList.children.length + 1) / 2);
@@ -40,14 +42,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    // const form = new Form();
-    // window.form = form;
-    // form.init();
+    const form = new Form();
+    window.form = form;
+    form.init();
     initTabs();
     initAccordions();
-    // subscriptionsControl.addEventListener('click', (e) => {
-    //   e.target.openTab();
-    // });
+    if (formSubmit !== null && registrationForm !== null) {
+      formInput.addEventListener('change', () => {
+        window.form.validateFormElement(formInput, false);
+      });
+      formSubmit.addEventListener('click', () => {
+        console.log('click');
+        window.form.validateForm(registrationForm);
+        // if (window.form.validateForm(registrationForm)) {
+        //   window.form.reset(registrationForm);
+        // }
+      });
+    }
   });
 });
 
