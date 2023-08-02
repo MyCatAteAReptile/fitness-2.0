@@ -162,3 +162,23 @@
     </form>
   </div>
 </section>
+
+
+<div class="r__form" data-form-validate="data-form-validate" data-callback="base">
+  <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+    <div class="r__inputs-container">
+      <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+        <label>
+          <span class="custom-input__label">Введите ваше имя.</span>
+          <input id="name" type="text" name="name" pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Имя" required>
+        </label>
+      </div>
+      <div class="custom-input" data-validate-type="phone" data-matrix-limitations="digit" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-phone-length="18" data-required>
+        <label>
+          <span class="custom-input__label">Введите ваш номер телефона.</span>
+          <input id="tel" type="tel" name="tel" pattern="^(\+)|[\d\s]+$" minlength="11" placeholder="Телефон" required></label>
+      </div>
+    </div>
+    <button class="r__button button button--main" type="submit">Отправить</button>
+  </form>
+</div>

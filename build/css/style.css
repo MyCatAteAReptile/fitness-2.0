@@ -4701,6 +4701,30 @@ button,
     margin-bottom: 28px;
   }
 }
+.registration__input {
+  width: 46%;
+}
+@media (max-width: 1199px) {
+  .registration__input {
+    width: 44%;
+  }
+}
+@media (max-width: 767px) {
+  .registration__input {
+    width: 100%;
+  }
+}
+.registration__input .is-invalid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FF121F;
+}
+.registration__input.is-invalid input {
+  border-bottom: 1px solid #FF121F;
+}
 
 .registration__form {
   display: -webkit-box;
@@ -4801,17 +4825,11 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 46%;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .registration__form input {
     padding: 6px 0;
-    width: 44%;
-  }
-}
-@media (max-width: 767px) {
-  .registration__form input {
-    width: 100%;
   }
 }
 @media (hover: hover) {

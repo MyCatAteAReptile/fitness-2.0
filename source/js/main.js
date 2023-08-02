@@ -47,18 +47,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initTabs();
     initAccordions();
-    if (formSubmit !== null && registrationForm !== null) {
-      formInput.addEventListener('change', () => {
-        window.form.validateFormElement(formInput, false);
-      });
-      formSubmit.addEventListener('click', () => {
-        console.log('click');
-        window.form.validateForm(registrationForm);
-        // if (window.form.validateForm(registrationForm)) {
-        //   window.form.reset(registrationForm);
-        // }
-      });
-    }
   });
 });
 
