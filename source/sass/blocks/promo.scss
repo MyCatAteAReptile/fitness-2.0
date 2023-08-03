@@ -63,10 +63,6 @@
       letter-spacing: 1.44px;
       padding-left: 6px;
     }
-
-    @include vp-767 {
-
-    }
   }
 
   &__text {
@@ -81,19 +77,12 @@
       font-size: 12px;
     }
 
-    @include vp-767 {
-    }
-
     &--bigger {
       font-size: 40px;
       font-weight: 700;
 
       @include vp-1199 {
         font-size: 24px;
-      }
-
-      @include vp-767 {
-
       }
     }
 
@@ -103,10 +92,6 @@
 
       @include vp-1199 {
         font-size: 10px;
-      }
-
-      @include vp-767 {
-
       }
     }
   }
@@ -127,39 +112,27 @@
     padding-bottom: 3px;
     border-bottom: 2px solid #FFFFFF;
 
-  @include vp-1199 {
-    min-width: 40px;
-    border-bottom: 1px solid #FFFFFF;
-    padding-bottom: 1px;
-    margin-right: 50px;
-  }
-
-  @include vp-767 {
-
-  }
+    @include vp-1199 {
+      min-width: 40px;
+      border-bottom: 1px solid #FFFFFF;
+      padding-bottom: 1px;
+      margin-right: 50px;
+    }
   }
 
   &__date-number {
     margin-right: 8px;
 
-  @include vp-1199 {
-    margin-right: 4px;
-  }
-
-  @include vp-767 {
-
-  }
+    @include vp-1199 {
+      margin-right: 4px;
+    }
   }
 
   &__date-month-year {
 
-  @include vp-1199 {
-    line-height: 120%;
-  }
-
-  @include vp-767 {
-
-  }
+    @include vp-1199 {
+      line-height: 120%;
+    }
   }
 
   &__time {
@@ -176,22 +149,14 @@
     border-bottom: 2px solid #FFFFFF;
     margin-bottom: -6px;
 
-
-  @include vp-1199 {
-    min-width: 54px;
-    padding-bottom: 0;
-    border-bottom: 1px solid #FFFFFF;
-    line-height: 110%;
-    margin-top: 3px;
-    margin-bottom: -5px;
-  }
-
-  @include vp-767 {
-
-  }
-  }
-
-  &__time-number {
+    @include vp-1199 {
+      min-width: 54px;
+      padding-bottom: 0;
+      border-bottom: 1px solid #FFFFFF;
+      line-height: 110%;
+      margin-top: 3px;
+      margin-bottom: -5px;
+    }
   }
 
   &__subtitle {
@@ -209,10 +174,6 @@
       padding: 14px 0;
       outline: 2px solid #FFFFFF;
       outline-offset: -2px;
-    }
-
-    @include vp-767 {
-
     }
   }
 

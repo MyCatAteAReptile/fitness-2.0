@@ -8,9 +8,6 @@ const infoList = document.querySelector('.info-list');
 const playGymVideoButton = document.querySelector('.gym__play-button');
 const gymVideoCover = document.querySelector('.gym__video-cover');
 const gymVideoFrame = document.querySelector('.gym__video-player iframe');
-const registrationForm = document.querySelector('.registration__form');
-const formSubmit = document.querySelector('.registration__form').querySelector('button');
-const formInput = document.querySelector('.registration__form').querySelector('input');
 
 if (window.matchMedia('(max-width: 767px)').matches && infoList !== null) {
   let rows = Math.ceil((infoList.children.length + 1) / 2);
@@ -24,10 +21,6 @@ if (playGymVideoButton !== null && gymVideoCover !== null && gymVideoFrame !== n
     gymVideoFrame.src += '?autoplay=1&mute=1';
   });
 }
-
-// if (subscriptionsTabs !== null) {
-//   subscriptionsTabs.append(tabs);
-// }
 
 window.addEventListener('DOMContentLoaded', () => {
 

@@ -132,15 +132,9 @@
 
     @include vp-1199 {
       padding: 6px 0;
-      //width: 44%;
-    }
-
-    @include vp-767 {
-      //width: 100%;
     }
 
     @include hover {
-      // color: #FFFFFF;
       border-bottom: 1px solid #FFFFFF;
       margin-bottom: -1px;
     }
@@ -170,7 +164,6 @@
   }
 
   & button {
-    //max-width: 80%;
     color: #FFF;
     font-family: $ff-roboto;
     font-size: 14px;

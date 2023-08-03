@@ -43,10 +43,6 @@
     @include vp-1199 {
       grid-template-columns: 1fr;
     }
-
-    @include vp-767 {
-
-    }
   }
 
   &__tabs-controls {
@@ -82,13 +78,6 @@
       min-height: 44px;
       font-size: 16px;
     }
-  }
-
-  &__tabs-content {
-  }
-
-  &__tabs-element {
-
   }
 
   &__accordion {
@@ -171,9 +160,6 @@
 
   .faq__accordion-element.is-active .faq__accordion-button::after {
     background: url("../img/svg/svg-sprite.svg#faq-button-active") no-repeat center / contain;
-  }
-
-  &__accordion-content {
   }
 
   &__accordion-wrapper {
