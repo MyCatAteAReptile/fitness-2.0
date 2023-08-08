@@ -13,7 +13,7 @@
     row-gap: 20px;
     grid-auto-flow: column dense;
     grid-template-rows: repeat(3, 1fr);
-    min-width: 0px;
+    min-width: 0;
   }
 
   &__item {
@@ -29,7 +29,7 @@
   }
 
   &__link {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: $ff-roboto;
     font-size: 14px;
     font-style: normal;

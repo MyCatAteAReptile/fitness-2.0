@@ -1,7 +1,7 @@
 .header-container {
   min-height: 658px;
   background: url("../img/hero-background-desktop@1x.png") no-repeat center / cover;
-  background-color: #B80128;
+  background-color: #b80128;
 
   @include retina {
     background: url("../img/hero-background-desktop@2x.png") no-repeat center / cover;

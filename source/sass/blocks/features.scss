@@ -1,5 +1,5 @@
 .features {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   padding: 108px 0 78px 0;
 
   @include vp-1199 {
@@ -95,7 +95,7 @@
       grid-template-columns: 100%;
       margin: 0;
       text-align: center;
-      background-color: #1C3374;
+      background-color: #1c3374;
       padding: 60px 20px 65px 20px;
 
       @include vp-1199 {
@@ -117,7 +117,7 @@
       }
 
       & .features__property {
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 28px;
         font-size: 26px;
         font-weight: 700;
@@ -130,7 +130,7 @@
       }
 
       & .features__number {
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 8px;
 
         @include vp-1199 {
@@ -144,7 +144,7 @@
       }
 
       & .features__text {
-        color: #FFFFFF;
+        color: #ffffff;
 
         @include vp-1199 {
           max-width: 210px;
@@ -159,7 +159,7 @@
   }
 
   &__property {
-    color: #2E35AC;
+    color: #2e35ac;
     font-family: $ff-roboto;
     font-size: 14px;
     font-style: normal;
@@ -182,7 +182,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
+    background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
     margin: 0;
     padding: 0;
     display: block;

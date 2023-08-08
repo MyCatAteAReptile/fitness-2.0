@@ -2,18 +2,18 @@
   display: block;
   padding: 28px 0 21px 0;
 
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: $ff-roboto;
   font-weight: 700;
-	font-size: 12px;
-	line-height: 12px;
+  font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.6px;
   text-align: center;
   text-transform: uppercase;
 
   background-color: transparent;
   border: none;
-  outline: 4px solid #FFFFFF;
+  outline: 4px solid #ffffff;
   outline-offset: -4px;
   cursor: pointer;
 
@@ -23,23 +23,19 @@
     padding: 24px 0 25px 0;
   }
 
-  @include vp-767 {
-
-  }
-
   @include hover {
-    color: #103AAE;
-    background-color: #FFFFFF;
+    color: #103aae;
+    background-color: #ffffff;
   }
 
   @include focus {
-    color: #103AAE;
-    background-color: #FFFFFF;
+    color: #103aae;
+    background-color: #ffffff;
   }
 
   @include active {
     color: #102654;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &--light-bg {
@@ -51,31 +47,27 @@
       padding: 27px 0 23px 0;
     }
 
-    @include vp-767 {
-
-    }
-
     @include hover {
-      color: #FFFFFF;
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      color: #ffffff;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
 
     @include focus {
-      color: #FFFFFF;
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      color: #ffffff;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
 
     @include active {
       color: rgba(255, 255, 255, 0.7);
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
 
     &.is-active {
-      color: #FFFFFF;
-      background: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+      color: #ffffff;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
   }

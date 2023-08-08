@@ -1,5 +1,5 @@
 .offer {
-  color: #1C3374;
+  color: #1c3374;
   font-family: $ff-roboto;
   font-style: normal;
   padding: 120px 0 120px 0;
@@ -64,7 +64,7 @@
     margin: 0 auto;
     border-width: 7px;
     border-style: solid;
-    border-image: linear-gradient(129deg, #D10A42 0%, #00359F 100%);
+    border-image: linear-gradient(129deg, #d10a42 0%, #00359f 100%);
     border-image-slice: 1;
     height: fit-content;
     min-width: 100%;
@@ -78,7 +78,7 @@
   }
 
   &__item--accent {
-    color: #FFFFFF;
+    color: #ffffff;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: flex;
@@ -111,7 +111,6 @@
     }
 
     & picture {
-
       @include vp-767 {
         width: 100%;
       }
@@ -119,7 +118,7 @@
   }
 
   &__wrapper {
-    background-color: #ED0233;
+    background-color: #ed0233;
     padding: 42px 45px 45px 45px;
     display: flex;
     flex-direction: column;
@@ -179,7 +178,7 @@
   }
 
   &__btn {
-    color: #1C3374;
+    color: #1c3374;
     font-family: $ff-roboto;
     font-size: 12px;
     font-style: normal;
@@ -190,7 +189,7 @@
     margin: 0;
     padding: 0;
     width: fit-content;
-    border-bottom: 1px solid #1C3374;
+    border-bottom: 1px solid #1c3374;
 
     @include vp-767 {
       align-self: center;
@@ -198,9 +197,9 @@
   }
 
   &__btn--accent {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ffffff;
     margin-top: auto;
   }
 

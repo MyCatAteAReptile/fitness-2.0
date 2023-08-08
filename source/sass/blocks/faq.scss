@@ -1,5 +1,5 @@
 .faq {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   padding: 120px 0 124px 0;
 
   @include vp-1199 {
@@ -46,7 +46,6 @@
   }
 
   &__tabs-controls {
-
     @include vp-1199 {
       display: flex;
       gap: 10px;
@@ -81,12 +80,12 @@
   }
 
   &__accordion {
-    border-top: 1px solid rgba(28, 51, 116, 0.20);
+    border-top: 1px solid rgba(28, 51, 116, 0.2);
   }
 
-  &__accordion-element{
+  &__accordion-element {
     min-height: 92px;
-    border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
     margin-bottom: -2px;
 
     @include vp-1199 {
@@ -108,7 +107,6 @@
   }
 
   &__accordion-button {
-    display: block;
     border: none;
     outline: none;
     background-color: transparent;
@@ -163,7 +161,6 @@
   }
 
   &__accordion-wrapper {
-
     & p {
       color: #102654;
       font-family: $ff-roboto;

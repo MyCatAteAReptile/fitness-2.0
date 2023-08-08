@@ -1,21 +1,21 @@
 .contacts {
-    padding-top: 56px;
-    border-top: 1px solid #74819C;
+  padding-top: 56px;
+  border-top: 1px solid #74819c;
 
-    @include vp-1199 {
-      border-top: none;
-      padding-top: 60px;
-      padding-bottom: 63px;
-    }
+  @include vp-1199 {
+    border-top: none;
+    padding-top: 60px;
+    padding-bottom: 63px;
+  }
 
-    @include vp-767 {
-      padding-top: 64px;
-      padding-bottom: 62px;
-    }
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 62px;
+  }
 
-    & .container {
-      padding-right: 0;
-    }
+  & .container {
+    padding-right: 0;
+  }
 
   &__container {
     margin-left: 20px;
@@ -81,7 +81,7 @@
         display: block;
         width: 1px;
         height: 87%;
-        background: #74819C;
+        background: #74819c;
         position: absolute;
         top: 6%;
         left: calc(50% + 4px);

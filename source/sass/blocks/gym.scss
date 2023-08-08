@@ -133,7 +133,6 @@
   }
 
   &__image {
-
     @include vp-767 {
       margin-bottom: 6.5px;
     }
@@ -177,7 +176,9 @@
       width: 320px;
     }
 
-    & iframe, & object, & embed {
+    & iframe,
+    & object,
+    & embed {
       position: absolute;
       left: 0;
       top: 0;
@@ -205,7 +206,7 @@
     border: none;
     border-radius: 50%;
     background: url("../img/video-player-button-border-no-shadow.png") no-repeat center / contain;
-    color: #FFFFFF;
+    color: #ffffff;
 
     @include vp-1199 {
       width: 72px;
@@ -222,16 +223,12 @@
       padding: 15.5px;
       margin: auto;
       border-radius: 50%;
-      background: linear-gradient(90deg, #ED0233 0%, #003EB7 100%);
+      background: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
 
       @include vp-1199 {
         width: 52px;
         height: 52px;
         padding: 10.5px;
-      }
-
-      @include vp-767 {
-
       }
     }
 
@@ -243,7 +240,7 @@
 
       & svg {
         color: #102654;
-        background: #FFFFFF;
+        background: #ffffff;
       }
     }
 
@@ -254,7 +251,7 @@
 
       & svg {
         color: #102654;
-        background: #FFFFFF;
+        background: #ffffff;
         width: 58px;
         height: 58px;
         padding: 11px;
@@ -269,7 +266,7 @@
 
     &:disabled {
       pointer-events: none;
-      color:rgba(16, 38, 84, 0.4);
+      color: rgba(16, 38, 84, 0.4);
       outline: 2px solid rgba(16, 38, 84, 0.4);
       outline-offset: -2px;
       background: none;

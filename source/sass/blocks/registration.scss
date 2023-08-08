@@ -25,7 +25,7 @@
   }
 
   &__heading {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "Alumni Sans", "Arial", sans-serif;
     font-size: 54px;
     font-style: normal;
@@ -65,11 +65,11 @@
       display: flex;
       font-size: 14px;
       line-height: 150%;
-      color: #FF121F;
+      color: #ff121f;
     }
 
     &.is-invalid input {
-      border-bottom: 1px solid #FF121F;
+      border-bottom: 1px solid #ff121f;
     }
   }
 }
@@ -107,7 +107,7 @@
   }
 
   & input::placeholder {
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: $ff-roboto;
     font-size: 14px;
     font-style: normal;
@@ -119,10 +119,10 @@
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid #74819C;
+    border-bottom: 1px solid #74819c;
     margin-bottom: -1px;
     padding: 9px 0;
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: $ff-roboto;
     font-size: 14px;
     font-style: normal;
@@ -135,12 +135,12 @@
     }
 
     @include hover {
-      border-bottom: 1px solid #FFFFFF;
+      border-bottom: 1px solid #ffffff;
       margin-bottom: -1px;
     }
 
     @include focus {
-      border: 1px solid #FFFFFF;
+      border: 1px solid #ffffff;
       margin: -1px;
 
       &::placeholder {
@@ -149,7 +149,7 @@
     }
 
     &:active {
-      border: 1px solid #FFFFFF;
+      border: 1px solid #ffffff;
       margin: -1px;
 
       &::placeholder {
@@ -164,7 +164,7 @@
   }
 
   & button {
-    color: #FFF;
+    color: #ffffff;
     font-family: $ff-roboto;
     font-size: 14px;
     font-style: normal;
