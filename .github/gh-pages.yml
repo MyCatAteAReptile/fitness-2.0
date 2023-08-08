@@ -3,11 +3,11 @@ name: gh-pages
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
-
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
