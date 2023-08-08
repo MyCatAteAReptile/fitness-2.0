@@ -24,7 +24,7 @@ jobs:
           node-version: '16.x'
 
       - name: Installing Dependencies
-        run: npm ci
+        run: npm i
 
       - name: Linting
         run: npm run lint
