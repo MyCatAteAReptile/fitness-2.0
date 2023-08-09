@@ -18,7 +18,7 @@ if (playGymVideoButton !== null && gymVideoCover !== null && gymVideoFrame !== n
   playGymVideoButton.addEventListener('click', () => {
     gymVideoCover.classList.add('visually-hidden');
     playGymVideoButton.classList.add('visually-hidden');
-    gymVideoFrame.src += '?autoplay=1&mute=1';
+    gymVideoFrame.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&mute=1';
   });
 }
 

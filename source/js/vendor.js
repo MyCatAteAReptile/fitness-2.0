@@ -1,8 +1,8 @@
 // Swiper 7.4.1
-import './vendor/swiper';
+import Swiper from './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 
-const coachSlider = new Swiper('.coaches__slider', {
+export const coachSlider = new Swiper('.coaches__slider', {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
@@ -35,7 +35,7 @@ const coachSlider = new Swiper('.coaches__slider', {
   },
 });
 
-const feedbackSlider = new Swiper('.feedback__slider', {
+export const feedbackSlider = new Swiper('.feedback__slider', {
   loop: false,
   watchOverflow: false,
   navigation: {
