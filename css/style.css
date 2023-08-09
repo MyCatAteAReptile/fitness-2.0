@@ -1307,6 +1307,8 @@ body {
 }
 
 html {
+  max-width: 1366px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1513,7 +1515,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
 }
@@ -1903,6 +1905,8 @@ button,
   top: 0;
   height: 100%;
   width: 100%;
+  border: none;
+  background-color: #000000;
 }
 
 .gym__video-cover {
