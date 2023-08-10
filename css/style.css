@@ -2051,6 +2051,7 @@ button,
   border: none;
   outline: none;
   padding: 11px 0;
+  cursor: pointer;
 }
 
 .tabs__control::before {
@@ -2394,6 +2395,7 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 
 .coaches__image {
@@ -2933,6 +2935,7 @@ button,
   padding-top: 26px;
   padding-left: 5px;
   text-align: start;
+  cursor: pointer;
 }
 
 .faq__accordion-button::after {
@@ -3030,6 +3033,7 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .feedback__slide picture {
