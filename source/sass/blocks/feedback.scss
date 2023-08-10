@@ -65,6 +65,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    cursor: pointer;
 
     @include vp-1199 {
       max-width: 566px;

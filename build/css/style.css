@@ -2332,6 +2332,7 @@ button,
   border: none;
   outline: none;
   padding: 11px 0;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .tabs__control {
@@ -2938,6 +2939,7 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 .coaches__image {
   margin: auto;
@@ -3831,6 +3833,7 @@ button,
   padding-top: 26px;
   padding-left: 5px;
   text-align: start;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .faq__accordion-button {
@@ -3991,6 +3994,7 @@ button,
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .feedback__slide {
