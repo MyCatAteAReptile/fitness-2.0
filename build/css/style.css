@@ -3130,7 +3130,7 @@ button,
 }
 @media (max-width: 767px) {
   .coaches__btn-next {
-    right: -16px;
+    right: -15.2px;
   }
 }
 
@@ -3501,6 +3501,7 @@ button,
   height: -moz-fit-content;
   height: fit-content;
   min-width: 100%;
+  max-width: 560px;
   min-height: 211px;
   display: -webkit-box;
   display: -ms-flexbox;
