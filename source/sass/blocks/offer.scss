@@ -191,6 +191,7 @@
     padding: 0;
     width: fit-content;
     border-bottom: 1px solid #1c3374;
+    user-select: none;
 
     @include vp-767 {
       align-self: center;

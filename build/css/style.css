@@ -1427,6 +1427,10 @@ button,
 .btn {
   display: block;
   padding: 28px 0 21px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -2333,6 +2337,10 @@ button,
   outline: none;
   padding: 11px 0;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .tabs__control {
@@ -3663,6 +3671,10 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 1px solid #1c3374;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 767px) {
   .offer__btn {
