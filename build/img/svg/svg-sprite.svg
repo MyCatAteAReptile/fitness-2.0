@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg"><style>:root svg:not(:target){display:none}</style><svg id="faq-button-active" viewBox="0 0 42 42"><g fill="none">
-<circle cx="21" cy="21" r="20.5" fill="#102654" stroke="#102654"/>
-<path d="M30 21H21H12" stroke="white"/>
-</g></svg><svg id="faq-button-disabled" viewBox="0 0 42 42"><g fill="none">
-<g opacity="0.3">
-<circle cx="21" cy="21" r="20.5" stroke="#102654"/>
-<path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
-</g>
-</g></svg><svg id="faq-button-hover-focus" viewBox="0 0 42 42"><g fill="none">
-<circle cx="21" cy="21" r="21" fill="#102654"/>
-<path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="white"/>
-</g></svg><svg id="faq-button" viewBox="0 0 42 42"><g fill="none">
-<circle cx="21" cy="21" r="20.5" stroke="#102654"/>
-<path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/>
-</g></svg></svg>
+<svg xmlns="http://www.w3.org/2000/svg"><style>:root svg:not(:target){display:none}</style><svg id="faq-button-active" viewBox="0 0 42 42"><g fill="none"><circle cx="21" cy="21" r="20.5" fill="#102654" stroke="#102654"/><path d="M30 21H21H12" stroke="white"/></g></svg><svg id="faq-button-disabled" viewBox="0 0 42 42"><g fill="none"><g opacity="0.3"><circle cx="21" cy="21" r="20.5" stroke="#102654"/><path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/></g></g></svg><svg id="faq-button-hover-focus" viewBox="0 0 42 42"><g fill="none"><circle cx="21" cy="21" r="21" fill="#102654"/><path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="white"/></g></svg><svg id="faq-button" viewBox="0 0 42 42"><g fill="none"><circle cx="21" cy="21" r="20.5" stroke="#102654"/><path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#102654"/></g></svg></svg>
