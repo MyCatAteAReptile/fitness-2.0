@@ -4688,6 +4688,10 @@ button,
     flex-direction: column;
   }
 
+  .offer__item--accent.offer__item {
+    padding: 0;
+  }
+
   .offer__item--accent picture {
     width: 100%;
   }
