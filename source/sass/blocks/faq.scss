@@ -73,8 +73,10 @@
 
     &.btn--light-bg {
       padding: 18px;
+    }
 
-      @include vp-767 {
+    @include vp-767 {
+      &.btn--light-bg {
         padding: 14px;
       }
     }
