@@ -4728,7 +4728,7 @@ button,
   }
 
   .faq {
-    padding: 70px 0 74px 0;
+    padding: 70px 0 70px 0;
   }
 
   .faq__heading {
@@ -4745,6 +4745,10 @@ button,
     margin-bottom: 29px;
   }
 
+  .faq__tabs-control.btn--light-bg {
+    padding: 14px;
+  }
+
   .faq__tabs-control {
     margin-bottom: 0;
     width: calc(50% - 4px);
@@ -4754,6 +4758,7 @@ button,
 
   .faq__accordion-element {
     padding-bottom: 20px;
+    padding-top: 21px;
     min-height: 84px;
   }
 

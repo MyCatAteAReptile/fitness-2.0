@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 74px 0;
+    padding: 70px 0 70px 0;
   }
 
   &__heading {
@@ -73,6 +73,9 @@
 
     &.btn--light-bg {
       padding: 18px;
+      @include vp-767 {
+        padding: 14px;
+      }
     }
 
     @include vp-767 {
@@ -99,6 +102,7 @@
 
     @include vp-767 {
       padding-bottom: 20px;
+      padding-top: 21px;
       min-height: 84px;
     }
 
