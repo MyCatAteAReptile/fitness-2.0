@@ -66,6 +66,7 @@
       min-width: 100%;
       row-gap: 40px;
       justify-items: center;
+      padding-left: 0;
     }
   }
 
@@ -115,6 +116,7 @@
         padding: 41px 20px 45px 20px;
         margin-top: 5px;
         margin-bottom: 6px;
+        margin-left: 0;
       }
 
       & .features__property {

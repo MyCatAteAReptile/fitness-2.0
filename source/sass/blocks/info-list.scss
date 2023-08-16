@@ -5,6 +5,12 @@
   flex-wrap: wrap;
   gap: 10px;
 
+  @include vp-1199 {
+    padding: 0;
+    padding-left: 36px;
+    gap: 15px;
+  }
+
   @include vp-767 {
     width: 100%;
     padding: 0;
@@ -22,7 +28,7 @@
     padding: 0 20px;
 
     @include vp-1199 {
-      padding: 0 15px;
+      padding: 0 8px;
     }
 
     @include vp-767 {

@@ -3710,8 +3710,14 @@ button,
     margin-top: 0;
   }
 
+  .info-list {
+    padding: 0;
+    padding-left: 36px;
+    gap: 15px;
+  }
+
   .info-list__item {
-    padding: 0 15px;
+    padding: 0 8px;
   }
 
   .hero__container {
@@ -4612,6 +4618,7 @@ button,
     min-width: 100%;
     row-gap: 40px;
     justify-items: center;
+    padding-left: 0;
   }
 
   .features__item {
@@ -4634,6 +4641,7 @@ button,
     padding: 41px 20px 45px 20px;
     margin-top: 5px;
     margin-bottom: 6px;
+    margin-left: 0;
   }
 
   .features__item:last-child .features__number {
@@ -4837,7 +4845,7 @@ button,
   }
 
   .feedback__btn-next {
-    right: -48px;
+    right: -45px;
   }
 
   .registration {
