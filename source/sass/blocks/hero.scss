@@ -53,10 +53,16 @@
     @include vp-1199 {
       grid-template-columns: 35% 65%;
       grid-template-rows: minmax(90px, min-content) minmax(166px, min-content) minmax(82px, min-content);
+      min-width: 330px;
+      margin-left: auto;
     }
 
     @include vp-767 {
       grid-template-rows: minmax(87px, min-content) minmax(172px, min-content) minmax(69px, min-content);
+      min-width: unset;
+      width: 100%;
+      margin-left: unset;
+      grid-template-columns: 1fr minmax(189px, min-content);
     }
   }
 
@@ -109,10 +115,14 @@
 
     @include vp-1199 {
       margin-top: -8px;
-
       font-size: 72px;
       letter-spacing: 3.6px;
       text-transform: unset;
+    }
+
+    @include vp-767 {
+      align-self: start;
+      margin-top: 0;
     }
   }
 
@@ -139,6 +149,7 @@
       margin-right: -9px;
       min-width: 113px;
       margin-bottom: 32px;
+      margin-top: 74px;
     }
   }
 

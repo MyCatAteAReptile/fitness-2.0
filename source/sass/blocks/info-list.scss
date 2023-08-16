@@ -2,6 +2,8 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 
   @include vp-767 {
     width: 100%;
@@ -35,6 +37,39 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: relative;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+    }
+
+    &:hover:not([disabled])::before {
+      bottom: -7px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+    }
+
+    &:focus-visible:not([disabled])::before {
+      top: -8px;
+      left: -10px;
+      width: calc(100% + 21px);
+      height: calc(100% + 15px);
+      border: 1px solid #ffffff;
+      background-color: transparent;
+    }
+
+    &:active:not([disabled])::before {
+      background-color: transparent;
+    }
+
+    &[disabled] {
+      opacity: 0.4;
+      pointer-events: none;
+    }
 
     @include vp-767 {
       font-size: 16px;

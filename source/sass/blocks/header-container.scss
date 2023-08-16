@@ -18,6 +18,7 @@
 
   @include vp-767 {
     min-height: 491px;
+    padding-bottom: 30px;
     background: url("../img/hero-background-mobile@1x.png") no-repeat center / cover;
 
     @include retina {

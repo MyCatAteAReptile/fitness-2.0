@@ -48,7 +48,8 @@
     }
 
     @include vp-767 {
-      max-width: 226px;
+      //max-width: 226px;
+      max-width: calc(100vw - 90px); //70vw;
     }
   }
 
@@ -73,7 +74,9 @@
     }
 
     @include vp-767 {
-      max-width: 226px;
+      //max-width: 226px;
+      max-width: calc(100vw - 90px); //70vw
+      min-height: 310px;
       padding: 48px 25px 18px 25px;
     }
 
@@ -150,6 +153,10 @@
 
     @include vp-767 {
       margin-top: calc(0px - 30px / 2);
+    }
+
+    &:focus svg {
+      outline: 1px solid #102654;
     }
 
     & svg {

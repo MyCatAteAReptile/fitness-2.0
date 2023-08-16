@@ -6,7 +6,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 11px;
+  gap: 11px;
 
   &__item {
     padding: 0;

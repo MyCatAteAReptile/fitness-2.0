@@ -4,9 +4,25 @@
   padding-bottom: 70px;
   padding-right: 70px;
   padding-left: 102px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 95%;
+    left: -50vw;
+    z-index: -1;
+    height: 100%;
+    background-color: #102654;
+  }
 
   @include vp-1199 {
     padding-top: 54px;
+
+    &::before {
+      //content: none;
+    }
   }
 
   @include vp-767 {

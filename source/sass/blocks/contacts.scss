@@ -1,6 +1,17 @@
 .contacts {
+  position: relative;
   padding-top: 56px;
-  border-top: 1px solid #74819c;
+  //border-top: 1px solid #74819c;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: #74819c;
+  //   right: -50vw;
+  //   left: 0;
+  //   z-index: -1;
+  //   height: 1px;
+  // }
 
   @include vp-1199 {
     border-top: none;
@@ -124,6 +135,27 @@
 
       @include vp-1199 {
         font-size: 20px;
+      }
+    }
+
+    & a {
+      &:focus-visible:not([disabled]) {
+        outline: 0;
+        opacity: 0.5;
+      }
+
+      &:hover:not([disabled]) {
+        outline: 0;
+        opacity: 0.5;
+      }
+
+      &:active:not([disabled]) {
+        opacity: 0.7;
+      }
+
+      &[disabled] {
+        opacity: 0.3;
+        pointer-events: none;
       }
     }
   }

@@ -48,14 +48,17 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
     row-gap: 40px;
+    min-width: 990px;
 
     @include vp-1199 {
       column-gap: 30px;
       row-gap: 30px;
+      min-width: unset;
     }
 
     @include vp-767 {
       grid-template-columns: 1fr;
+      min-width: unset;
     }
   }
 
@@ -69,9 +72,14 @@
     height: fit-content;
     min-width: 100%;
     max-width: 560px;
-    min-height: 211px;
+    //min-height: 211px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+
+    @include vp-1199 {
+      min-height: 211px;
+    }
 
     @include vp-767 {
       padding: 35px 28px 28px 28px;
@@ -112,6 +120,8 @@
     }
 
     & picture {
+      height: 100%;
+
       @include vp-767 {
         width: 100%;
       }
@@ -191,10 +201,34 @@
     padding: 0;
     width: fit-content;
     border-bottom: 1px solid #1c3374;
+    outline: none;
     user-select: none;
+    position: relative;
 
     @include vp-767 {
       align-self: center;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+    }
+
+    &:hover:not([disabled]) {
+      opacity: 0.7;
+    }
+
+    &:focus-visible:not([disabled]) {
+      padding: 0 0 1px;
+      border: 0;
+    }
+
+    &:focus-visible:not([disabled])::before {
+      top: -8px;
+      left: -10px;
+      width: calc(100% + 21px);
+      height: calc(100% + 13px);
+      border: 1px solid #102654;
     }
   }
 
@@ -203,12 +237,30 @@
     font-size: 14px;
     border-bottom: 1px solid #ffffff;
     margin-top: auto;
+
+    &:hover:not([disabled]) {
+      opacity: 0.8;
+    }
+
+    &:focus-visible:not([disabled])::before {
+      top: -8px;
+      left: -10px;
+      width: calc(100% + 21px);
+      height: calc(100% + 13px);
+      border: 1px solid #ffffff;
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      pointer-events: none;
+    }
   }
 
   &__image {
     height: 100%;
     flex-grow: 2;
     max-width: unset;
+    object-fit: cover;
 
     @include vp-767 {
       width: 100%;

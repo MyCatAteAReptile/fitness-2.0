@@ -30,6 +30,29 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    & a {
+      &:focus-visible:not([disabled]) {
+        outline: 0;
+        opacity: 0.5;
+      }
+
+      &:hover:not([disabled]) {
+        outline: 0;
+        opacity: 0.5;
+      }
+
+      &:active:not([disabled]) {
+        opacity: 0.7;
+      }
+
+      &[disabled] {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+    }
   }
 
   &__logo {

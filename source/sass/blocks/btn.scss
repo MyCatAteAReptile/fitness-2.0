@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: 28px 0 21px 0;
+  padding: 28px 10px 21px 10px;
   user-select: none;
   color: #ffffff;
   font-family: $ff-roboto;
@@ -20,20 +20,20 @@
   transition: opacity $trans-default;
 
   @include vp-1199 {
-    padding: 24px 0 25px 0;
+    padding: 24px 10px 25px 10px;
   }
 
-  @include hover {
+  &:hover {
     color: #103aae;
     background-color: #ffffff;
   }
 
-  @include focus {
+  &:focus {
     color: #103aae;
     background-color: #ffffff;
   }
 
-  @include active {
+  &:active {
     color: #102654;
     background-color: #ffffff;
   }
@@ -47,19 +47,19 @@
       padding: 27px 0 23px 0;
     }
 
-    @include hover {
+    &:hover {
       color: #ffffff;
       background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
 
-    @include focus {
+    &:focus {
       color: #ffffff;
       background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;
     }
 
-    @include active {
+    &:active {
       color: rgba(255, 255, 255, 0.7);
       background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       outline: none;

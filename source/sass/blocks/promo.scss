@@ -24,15 +24,19 @@
     display: grid;
     grid-template-columns: 65% 27%;
     column-gap: 8%;
-    grid-template-rows: 85px 85px 65px 70px;
+    grid-template-rows: 85px 85px 65px minmax(70px, fit-content);
     row-gap: 10px;
 
     @include vp-1199 {
       padding: 45px;
       grid-template-columns: 64.5% 27.5%;
       column-gap: 8%;
-      grid-template-rows: 54px 54px 48px 40px;
+      //grid-template-rows: 54px 54px 48px 40px;
+      //grid-template-rows: 10px;
+      grid-template-rows: minmax(54px, min-content) minmax(54px, min-content) minmax(48px, min-content) minmax(40px, min-content);
       row-gap: 0;
+      align-content: start;
+      //margin-bottom: auto;
     }
 
     @include vp-767 {
@@ -102,6 +106,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    align-self: start;
+
+    @include vp-767 {
+      max-width: 104px;
+    }
   }
 
   &__date-title {
@@ -115,7 +124,7 @@
       min-width: 40px;
       border-bottom: 1px solid #ffffff;
       padding-bottom: 1px;
-      margin-right: 50px;
+      margin-right: 55px;
     }
   }
 
@@ -139,6 +148,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-self: start;
+
+    @include vp-767 {
+      max-width: 104px;
+    }
   }
 
   &__time-title {

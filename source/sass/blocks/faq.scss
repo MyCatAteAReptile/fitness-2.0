@@ -68,7 +68,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
-    padding: 0;
+    //padding: 0;
+    padding: 18px;
     min-height: 54px;
 
     @include vp-767 {
@@ -87,6 +88,7 @@
     min-height: 92px;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
     margin-bottom: -2px;
+    padding: 26px 0;
 
     @include vp-1199 {
       padding-bottom: 22px;
@@ -121,7 +123,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    padding-top: 26px;
     padding-left: 5px;
     text-align: start;
     cursor: pointer;
@@ -133,13 +134,13 @@
 
     @include vp-767 {
       font-size: 18px;
-      padding-top: 20px;
+      //padding-top: 20px;
     }
 
     &::after {
       display: block;
       content: "";
-      width: 42px;
+      min-width: 42px;
       height: 42px;
       background: url("../img/svg/svg-sprite.svg#faq-button") no-repeat center / contain;
 
@@ -156,6 +157,9 @@
       }
     }
   }
+  // .faq__accordion-element.is-active .faq__accordion-button {
+  //   padding-bottom: 0;
+  // }
 
   .faq__accordion-element.is-active .faq__accordion-button::after {
     background: url("../img/svg/svg-sprite.svg#faq-button-active") no-repeat center / contain;
