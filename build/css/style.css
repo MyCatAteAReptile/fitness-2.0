@@ -1693,11 +1693,12 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  padding-left: 38px;
 }
 
 .info-list__item {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .info-list__link {
@@ -2305,10 +2306,10 @@ button,
   -webkit-column-gap: 8%;
   -moz-column-gap: 8%;
   column-gap: 8%;
-  -ms-grid-rows: 85px 85px 65px minmax(70px, -webkit-fit-content);
-  -ms-grid-rows: 85px 85px 65px minmax(70px, fit-content);
-  grid-template-rows: 85px 85px 65px minmax(70px, -webkit-fit-content);
-  grid-template-rows: 85px 85px 65px minmax(70px, fit-content);
+  -ms-grid-rows: minmax(85px, -webkit-min-content) minmax(85px, -webkit-min-content) minmax(65px, -webkit-min-content) minmax(70px, -webkit-min-content);
+  -ms-grid-rows: minmax(85px, min-content) minmax(85px, min-content) minmax(65px, min-content) minmax(70px, min-content);
+  grid-template-rows: minmax(85px, -webkit-min-content) minmax(85px, -webkit-min-content) minmax(65px, -webkit-min-content) minmax(70px, -webkit-min-content);
+  grid-template-rows: minmax(85px, min-content) minmax(85px, min-content) minmax(65px, min-content) minmax(70px, min-content);
   row-gap: 10px;
 }
 
@@ -3029,7 +3030,7 @@ button,
 
 .faq {
   background-color: #f8f9fc;
-  padding: 120px 0 124px 0;
+  padding: 120px 0 115px 0;
 }
 
 .faq__heading {
