@@ -59,6 +59,30 @@
     }
   }
 
+  &__tabs-control {
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-family: $ff-roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 18px;
+    min-height: 54px;
+
+    &.btn--light-bg {
+      padding: 18px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
+      width: calc(50% - 4px);
+      min-height: 44px;
+      font-size: 16px;
+    }
+  }
+
   &__accordion {
     border-top: 1px solid rgba(28, 51, 116, 0.2);
   }
@@ -164,25 +188,5 @@
         margin-top: 13px;
       }
     }
-  }
-}
-
-.faq__tabs-control.faq__tabs-control {
-  width: 100%;
-  margin-bottom: 10px;
-  text-transform: none;
-  font-family: $ff-roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-  padding: 18px;
-  min-height: 54px;
-
-  @include vp-767 {
-    margin-bottom: 0;
-    width: calc(50% - 4px);
-    min-height: 44px;
-    font-size: 16px;
   }
 }
