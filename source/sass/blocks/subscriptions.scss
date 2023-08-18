@@ -22,6 +22,10 @@
     height: 348px;
     background: url("../img/weight-plates-cut-desktop@1x.png") no-repeat center / cover;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (max-width: ($vp-1200 - 1px)) {
+      background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center / cover;
+    }
+
     @include retina {
       background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center / cover;
     }
@@ -31,10 +35,6 @@
       height: 410px;
       bottom: -110px;
       background: url("../img/weight-plates-cut-tablet@1x.png") no-repeat center / cover;
-    }
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (max-width: ($vp-1200 - 1px)) {
-      background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center / cover;
     }
 
     @include vp-767 {
