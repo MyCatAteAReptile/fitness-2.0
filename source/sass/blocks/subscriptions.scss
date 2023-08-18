@@ -35,11 +35,12 @@
     }
 
     @include retina {
-      background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center / cover;
 
       @include vp-1199 {
         background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center / cover;
       }
+
+      background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center / cover;
     }
   }
 
