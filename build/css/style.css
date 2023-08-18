@@ -4468,7 +4468,7 @@ button,
     height: unset;
   }
 
-  .gym__video-container:before {
+  .gym__video-container::before {
     content: "";
     display: block;
     padding-top: 56.15%;

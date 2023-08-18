@@ -162,7 +162,7 @@
       overflow: hidden;
       height: unset;
 
-      &:before{
+      &::before {
         content: "";
         display: block;
         padding-top: 56.15%;
