@@ -38,6 +38,20 @@
 
     @include vp-767 {
       padding-bottom: 50px;
+      max-width: 290px;
+      margin: 0 auto;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: #ed0233;
+        width: calc(100vw - 30px);
+        height: 100%;
+        top: 0;
+        left: calc(160px - 50vw);
+        z-index: -1;
+      }
     }
   }
 

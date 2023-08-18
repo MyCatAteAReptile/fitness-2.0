@@ -39,13 +39,12 @@
     position: relative;
 
     @include vp-1199 {
-      margin-left: 55px;
-      margin-right: 55px;
+      max-width: 568px;
+      margin: 0 auto;
     }
 
     @include vp-767 {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0 auto;
     }
   }
 
@@ -56,7 +55,7 @@
     cursor: pointer;
 
     @include hover-focus {
-      background-color: rgba(16, 38, 84, 0.89);
+      //background-color: rgba(16, 38, 84, 0.89);
       justify-content: center;
 
       .coaches__description {

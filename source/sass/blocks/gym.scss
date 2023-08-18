@@ -151,7 +151,7 @@
       width: 266px;
       height: 167px;
       top: 76.2%;
-      left: 30.4%;
+      left: calc(50% - 133px);
     }
 
     @include vp-767 {
@@ -160,6 +160,13 @@
       left: 0;
       position: relative;
       overflow: hidden;
+      height: unset;
+
+      &:before{
+        content: "";
+        display: block;
+        padding-top: 56.15%;
+      }
     }
   }
 
@@ -175,7 +182,12 @@
     }
 
     @include vp-767 {
+      height: unset;
       width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
     }
 
     & iframe,
@@ -199,17 +211,21 @@
     & picture {
       @include vp-767 {
         width: 100%;
+        display: block;
+        height: 100%;
       }
     }
 
     & img {
       @include vp-767 {
         width: 100%;
+        height: 100%;
       }
     }
 
     @include vp-767 {
       width: 100%;
+      height: 100%;
     }
   }
 
