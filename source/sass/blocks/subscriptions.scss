@@ -35,7 +35,6 @@
     }
 
     @include retina {
-
       @include vp-1199 {
         background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center / cover;
       }
