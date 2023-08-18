@@ -4286,7 +4286,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1199px), (min-resolution: 144dpi) and (max-width: 1199px), (min-resolution: 1.5dppx) and (max-width: 1199px) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (max-width: 1199px) {
   .subscriptions::before {
     background: url("../img/weight-plates-cut-tablet@2x.png") no-repeat center/cover;
   }
