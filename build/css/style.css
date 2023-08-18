@@ -2836,10 +2836,6 @@ button,
   padding: 120px 0 120px 0;
 }
 
-.offer .container {
-  padding: 0;
-}
-
 .offer__heading {
   color: #102654;
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -3691,6 +3687,18 @@ button,
     }
   }
 */
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx), (min-width: 1200px) {
+  .subscriptions::before {
+    background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center/cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offer .container {
+    padding: 0;
+  }
+}
 
 @media (max-width: 1199px) {
   .container {
@@ -4982,10 +4990,6 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header-container {
     background: url("../img/hero-background-desktop@2x.png") no-repeat center/cover;
-  }
-
-  .subscriptions::before {
-    background: url("../img/weight-plates-cut-desktop@2x.png") no-repeat center/cover;
   }
 }
 

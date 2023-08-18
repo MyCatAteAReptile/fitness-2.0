@@ -5,7 +5,9 @@
   padding: 120px 0 120px 0;
 
   & .container {
-    padding: 0;
+    @media (min-width: ($vp-1200)) {
+      padding: 0;
+    }
   }
 
   @include vp-1199 {
