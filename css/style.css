@@ -3087,10 +3087,51 @@ button,
   line-height: 100%;
   padding: 18px;
   min-height: 54px;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: 0.6px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  color: #102654;
+  outline: 1px solid rgba(16, 38, 84, 0.2);
+  outline-offset: -1px;
 }
 
-.faq__tabs-control.btn--light-bg {
-  padding: 18px;
+.faq__tabs-control:hover:not([disabled]) {
+  outline: 1px solid #102654;
+}
+
+.faq__tabs-control:focus:not([disabled]) {
+  outline: 1px solid #102654;
+}
+
+.faq__tabs-control:focus-visible:not([disabled]) {
+  outline: 1px solid #102654;
+}
+
+.faq__tabs-control:active:not([disabled]) {
+  color: #ffffff;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  outline: none;
+}
+
+.faq__tabs-control.is-active {
+  color: #ffffff;
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  outline: none;
+}
+
+.faq__tabs-control[disabled] {
+  color: #c8c9cc;
+  outline: 1px solid rgba(16, 38, 84, 0.2);
+  pointer-events: none;
 }
 
 .faq__accordion {
@@ -4818,11 +4859,8 @@ button,
     margin-bottom: 29px;
   }
 
-  .faq__tabs-control.btn--light-bg {
-    padding: 14px;
-  }
-
   .faq__tabs-control {
+    padding: 14px;
     margin-bottom: 0;
     width: calc(50% - 4px);
     min-height: 44px;
