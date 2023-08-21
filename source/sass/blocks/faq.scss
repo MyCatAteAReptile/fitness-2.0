@@ -70,22 +70,54 @@
     line-height: 100%;
     padding: 18px;
     min-height: 54px;
-
-    &.btn--light-bg {
-      padding: 18px;
-    }
+    display: block;
+    user-select: none;
+    letter-spacing: 0.6px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity $trans-default;
+    color: #102654;
+    outline: 1px solid rgba(16, 38, 84, 0.2);
+    outline-offset: -1px;
 
     @include vp-767 {
-      &.btn--light-bg {
-        padding: 14px;
-      }
-    }
-
-    @include vp-767 {
+      padding: 14px;
       margin-bottom: 0;
       width: calc(50% - 4px);
       min-height: 44px;
       font-size: 16px;
+    }
+
+    &:hover:not([disabled]) {
+      outline: 1px solid #102654;
+    }
+
+    &:focus:not([disabled]) {
+      outline: 1px solid #102654;
+    }
+
+    &:focus-visible:not([disabled]) {
+      outline: 1px solid #102654;
+    }
+
+    &:active:not([disabled]) {
+      color: #ffffff;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      outline: none;
+    }
+
+    &.is-active {
+      color: #ffffff;
+      background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      outline: none;
+    }
+
+    &[disabled] {
+      color: #c8c9cc;
+      outline: 1px solid rgba(16, 38, 84, 0.2);
+      pointer-events: none;
     }
   }
 
