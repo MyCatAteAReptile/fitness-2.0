@@ -64,6 +64,14 @@
     }
   }
 
+  &__links-wrapper {
+    max-width: 65%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   &__phone {
     color: inherit;
   }
